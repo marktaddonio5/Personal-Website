@@ -1,17 +1,48 @@
-.App {
-  text-align: center;
+
+
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(12);
+  grid-template-rows: repeat(4);
+  margin: 1vw;
+  place-items: center;
+  
 }
+
+.headerSection{
+  display: inline-flex;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  height: 10vh
+}
+
+.mainSection {
+  display: inline-flex;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  height: 50vh
+}
+
+.containerBlue {
+  background-color: cadetblue;
+  color:antiquewhite
+}
+
+.containerBlack {
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* defaults */
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
