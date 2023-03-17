@@ -1,38 +1,70 @@
-
-
+/* Containers */
 
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(12);
   grid-template-rows: repeat(4);
-  margin: 1vw;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
   place-items: center;
-  
-}
-
-.headerSection{
-  display: inline-flex;
-  grid-column-start: 1;
-  grid-column-end: 12;
-  height: 10vh
-}
-
-.mainSection {
-  display: inline-flex;
-  grid-column-start: 1;
-  grid-column-end: 12;
-  height: 50vh
+  border-radius: .5vh;
 }
 
 .containerBlue {
   background-color: cadetblue;
-  color:antiquewhite
+  color:antiquewhite;
 }
 
 .containerBlack {
   background-color: black;
   color: whitesmoke;
 }
+
+.containerBeige {
+  background-color: beige;
+}
+/* Sections */
+
+.headerSection{
+  display: inline-flex;
+  height: fit-content;
+  place-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2vw;
+}
+
+.mainSection {
+  display: inline-flex;
+  flex-direction: column;
+  height: fit-content;
+  place-items: center;
+}
+
+nav {
+  display: inline-flex;
+  flex-flow: row;
+  flex-direction: row;
+  column-gap: 15vw;
+  row-gap: 1vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2vw;
+}
+
+/* Elements */
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color:bisque;
+}
+
+a:hover {
+  color:aqua
+}
+
 
 /* defaults */
 

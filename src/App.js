@@ -3,12 +3,14 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main'
 import { BrowserRouter } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
     <BrowserRouter>
-      <div >
+      <div>
         <Header />
+        <LandingPage />
         <Main />
       </div>
     </BrowserRouter>
