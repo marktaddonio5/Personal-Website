@@ -9,7 +9,7 @@ const WebDevelopment = () => {
             <h3>Credentials</h3>
             <p>Credential information here</p>
             <h3>Current React Projects</h3>
-            <a href="https://github.com/marktaddonio5/Personal-Website">Click here Github link for this website</a>
+            <a href="https://github.com/marktaddonio5/Personal-Website">/* Click here Github link for this website */</a>
         </section>
     )
 }

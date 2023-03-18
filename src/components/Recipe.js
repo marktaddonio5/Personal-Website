@@ -10,10 +10,12 @@ const Recipe = (props) => {
     function handleButtons(props){
         function stepNext() {
             if (stepNumber < array.length) return (setStepNumber(stepNumber + 1), setStep(array[stepNumber]));
+            else return
         };
 
         function stepPrevious() {
             if (stepNumber >= 2) return (setStepNumber(stepNumber - 1), setStep(array[stepNumber - 2]));
+            else return;
         };
 
         if (props === "next") return (stepNext());

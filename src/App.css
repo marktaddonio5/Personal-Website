@@ -3,7 +3,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(12 auto);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
   margin-right: 0.5vw;
   margin-left: 0.5vw;
   place-items: center;
