@@ -1,43 +1,13 @@
-import salad from "../assets/logo192.png"
-import { useState } from "react";
-const array = [
-    {
-        imgPrep: require("../assets/greek salad.jpg"),
-        imgCook: require("../assets/greek salad.jpg"),
-        directions: "abcdefg1111111111111111111111111111111111111111"
-    },
-    {
-        imgPrep: require("../assets/greek salad.jpg"),
-        imgCook: require("../assets/greek salad.jpg"),
-        directions: "hijklmnop"
-    },
-    {
-        imgPrep: require("../assets/greek salad.jpg"),
-        imgCook: require("../assets/greek salad.jpg"),
-        directions: "qrxtuv"
-    },
-    {
-        imgPrep: require("../assets/greek salad.jpg"),
-        imgCook: require("../assets/greek salad.jpg"),
-        directions: "xy"
-    },
-    {
-        imgPrep: require("../assets/greek salad.jpg"),
-        imgCook: require("../assets/greek salad.jpg"),
-        directions: "z"
-    },
-    {
-        imgPrep: require("../assets/greek salad.jpg"),
-        imgCook: require("../assets/greek salad.jpg"),
-        directions: "z1"
-    },
-];
 
-const Recipe = () => {
+import { useState } from "react";
+
+const Recipe = (props) => {
+    const array = props.arr
+    
     const [stepNumber, setStepNumber] = useState(1)
     const [step, setStep] = useState(array[stepNumber - 1])
 
-
+    
     function handleButtons(props){
         function stepNext() {
             if (stepNumber < array.length) return (setStepNumber(stepNumber + 1), setStep(array[stepNumber]));
