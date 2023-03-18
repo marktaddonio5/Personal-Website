@@ -1,4 +1,4 @@
-
+import Recipe from "../components/Recipe";
 
 const WebDevelopment = () => {
     return(
@@ -10,6 +10,10 @@ const WebDevelopment = () => {
             <p>Credential information here</p>
             <h3>Current React Projects</h3>
             <p>Information and github project links here</p>
+            <article>
+                <Recipe />
+            </article>
+            
         </section>
     )
 }

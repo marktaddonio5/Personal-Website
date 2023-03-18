@@ -2,8 +2,8 @@
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(12);
-  grid-template-rows: repeat(4);
+  grid-template-columns: repeat(12 auto);
+  grid-template-rows: repeat(4, auto);
   margin-right: 0.5vw;
   margin-left: 0.5vw;
   place-items: center;
@@ -31,7 +31,7 @@
   place-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2vw;
+  padding: 2vh;
 }
 
 .mainSection {
@@ -50,6 +50,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   padding: 2vw;
+  height:fit-content;
 }
 
 /* Elements */
@@ -65,6 +66,11 @@ a:hover {
   color:aqua
 }
 
+.recipe {
+  display: grid;
+  
+
+}
 
 /* defaults */
 
