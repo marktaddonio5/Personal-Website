@@ -3,7 +3,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(12 auto);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
   margin-right: 0.5vw;
   margin-left: 0.5vw;
   place-items: center;
@@ -23,6 +23,7 @@
 .containerBeige {
   background-color: beige;
 }
+
 /* Sections */
 
 .headerSection{
@@ -53,7 +54,30 @@ nav {
   height:fit-content;
 }
 
+/* Recipe Section Styling */
+.recipeSection{
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  grid-template-rows: fit-content fit-content fit-content fit-content;
+  border-style: solid;
+  padding:1%;
+  margin: 1%;
+}
+
+.span2 {
+  grid-column-start: span 2;
+  overflow: wrap;
+}
+
+.recipeImg {
+  width: 45vw;
+}
+
 /* Elements */
+button {
+  height: 6vw;
+  width: 100%;
+}
 a {
   text-decoration: none;
 }
@@ -66,11 +90,8 @@ a:hover {
   color:aqua
 }
 
-.recipe {
-  display: grid;
-  
 
-}
+
 
 /* defaults */
 
