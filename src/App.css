@@ -33,6 +33,9 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 2vh;
+  position: fixed;
+  top: 0;
+  bottom: 2.5vh;
 }
 
 .mainSection {
@@ -40,6 +43,7 @@
   flex-direction: column;
   height: fit-content;
   place-items: center;
+  height: 100vh;
 }
 
 nav {
@@ -54,6 +58,9 @@ nav {
   height:fit-content;
 }
 
+.landingSection {
+  height:100vh;
+}
 /* Recipe Section Styling */
 .recipeSection{
   display: grid;

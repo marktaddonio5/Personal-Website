@@ -2,7 +2,7 @@
 
 const MusicEducation = () => {
     return(
-        <section className="mainSection">
+        <section className="mainSection" id="musicEd-section">
             <h1>Music Educator</h1>
             <h3>Credentials</h3>
             <p>Credential info here</p>

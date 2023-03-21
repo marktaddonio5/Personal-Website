@@ -2,7 +2,7 @@
 
 const Trombone = () => {
     return(
-        <section className="mainSection">
+        <section className="mainSection" id="trombone-section">
             <h1>Trombonist</h1>
             <h3>Professional Experience</h3>
             <p>Info about performing experience</p>

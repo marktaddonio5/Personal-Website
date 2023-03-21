@@ -3,6 +3,8 @@ import WebDevelopment from "../section-components/WebDevelopment"
 import Trombone from "../section-components/Trombone"
 import {Routes, Route} from "react-router-dom"
 import Recipe from "./Recipe"
+
+
 const recipeTemplate1 = [
     {
         imgPrep: require("../assets/greek salad.jpg"),
