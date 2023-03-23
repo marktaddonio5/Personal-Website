@@ -1,5 +1,6 @@
 /* Containers */
 
+
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(12 auto);
@@ -18,6 +19,7 @@
 .containerBlack {
   background-color: black;
   color: whitesmoke;
+  opacity: .5;
 }
 
 .containerBeige {
@@ -28,23 +30,15 @@
 
 .headerSection{
   display: inline-flex;
-  height: fit-content;
+  max-height:5vh;
+  width: 100vw;
   place-items: center;
-  flex-wrap: wrap;
   justify-content: center;
   padding: 2vh;
   position: fixed;
-  top: 0;
-  bottom: 2.5vh;
+  transition: top, .4s;
 }
 
-.mainSection {
-  display: inline-flex;
-  flex-direction: column;
-  height: fit-content;
-  place-items: center;
-  height: 100vh;
-}
 
 nav {
   display: inline-flex;
@@ -58,8 +52,26 @@ nav {
   height:fit-content;
 }
 
+/*
+@media only screen and (max-width: 650px){
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+*/
+.mainSection {
+  display: inline-flex;
+  flex-direction: column;
+  height: fit-content;
+  place-items: center;
+  height: 100vh;
+  overflow:visible;
+}
+
 .landingSection {
   height:100vh;
+  margin-top: 9vh;
 }
 /* Recipe Section Styling */
 .recipeSection{
@@ -84,6 +96,7 @@ nav {
 button {
   height: 6vw;
   width: 100%;
+  box-shadow: 40px #282c34;
 }
 a {
   text-decoration: none;

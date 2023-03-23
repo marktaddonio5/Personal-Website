@@ -10,11 +10,11 @@ import WebDevelopment from './section-components/WebDevelopment';
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <>
         <Header />
         <LandingPage />
         <Main />
-      </div>
+      </>
     </BrowserRouter>
   );
 }

@@ -2,8 +2,8 @@ import Recipe from "../components/Recipe";
 
 const WebDevelopment = () => {
     return(
-        <section className="mainSection" id="webDevelopment-section">
-            <h1>React Developer</h1>
+        <section className="mainSection">
+            <h1 id="webDevelopment-section">React Developer</h1>
             <h3>Languages</h3>
             <p>Information about laanguages here</p>
             <h3>Credentials</h3>
