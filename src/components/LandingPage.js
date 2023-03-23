@@ -2,7 +2,7 @@
 const LandingPage = () => {
     
     return (
-        <section className="gridContainer containerBeige landingSection" id="landing-section">
+        <section className="gridContainer containerBeige landingSection">
             <h1>Mark Taddonio</h1>
             <p>Image place holder paragraph</p>
         </section>   

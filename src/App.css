@@ -1,18 +1,20 @@
+/* Animations */
+
 /* Containers */
-
-
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(12 auto);
   grid-template-rows: repeat(6, auto);
-  
   place-items: center;
   border-radius: .5vh;
 }
 
 .containerBlue {
-  background-color: cadetblue;
   color:antiquewhite;
+}
+
+.containerBlue{
+  background-color: cadetblue;
 }
 
 .containerBlack {
@@ -23,6 +25,7 @@
 
 .containerBeige {
   background-color: beige;
+  color: black;
 }
 
 body {
@@ -67,10 +70,11 @@ nav {
   flex-direction: column;
   place-items: center;
   height: 100vh;
+  width:100vw;
+  padding-top: 7vh;
 }
 
 .landingSection {
-  display: inline-flex;
   flex-direction: column;
   place-items: center;
   height: 100vh;
