@@ -21,9 +21,11 @@ const Header = () => {
 
     const handleScroll = debounce(() => {
         const currentScrollPos = window.scrollY;
-        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 300) || currentScrollPos < 10);
+        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 300) 
+        || currentScrollPos < 30
+        || prevScrollPos > currentScrollPos && visible === true);
         setPrevScrollPos(currentScrollPos);
-    }, 100);
+    }, 200);
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);

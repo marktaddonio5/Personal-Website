@@ -5,8 +5,7 @@
   display: grid;
   grid-template-columns: repeat(12 auto);
   grid-template-rows: repeat(6, auto);
-  margin-right: 0.5vw;
-  margin-left: 0.5vw;
+  
   place-items: center;
   border-radius: .5vh;
 }
@@ -26,6 +25,9 @@
   background-color: beige;
 }
 
+body {
+  background-color: beige;
+}
 /* Sections */
 
 .headerSection{
@@ -63,14 +65,15 @@ nav {
 .mainSection {
   display: inline-flex;
   flex-direction: column;
-  height: fit-content;
   place-items: center;
   height: 100vh;
-  overflow:visible;
 }
 
 .landingSection {
-  height:100vh;
+  display: inline-flex;
+  flex-direction: column;
+  place-items: center;
+  height: 100vh;
   margin-top: 9vh;
 }
 /* Recipe Section Styling */
