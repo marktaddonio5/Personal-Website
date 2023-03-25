@@ -1,7 +1,7 @@
 import MusicEducation from "../section-components/MusicEducation"
 import WebDevelopment from "../section-components/WebDevelopment"
 import Trombone from "../section-components/Trombone"
-import {Routes, Route} from "react-router-dom"
+import LandingPage from "../section-components/LandingPage"
 import Recipe from "./Recipe"
 
 
@@ -69,7 +69,8 @@ const recipeTemplate2 = [
 
 const Main = () => {
     return(
-            <main className="gridContainer containerBlue">
+            <main className="gridContainer">
+                <LandingPage />
                 <WebDevelopment />
                 <Recipe arr={recipeTemplate1} />
                 <Recipe arr={recipeTemplate2} />

@@ -19,13 +19,18 @@ const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0)
     const [visible, setVisible] = useState(true)
 
-    let mousePos = undefined;
+    const [prevMousePos, setPrevMousePos] = useState(0)
 
-    window.addEventListener('mousemove', (event) => {
-        mousePos = event.clientY
-        if (mousePos <= 70 && visible === false) return setVisible(true)
-        else return () => window.removeEventListener('mousemove')
-    })
+    useEffect(() =>{
+        window.addEventListener('mousemove', (e) => {
+            const mousePos = e.clientY
+            console.log(mousePos)
+            console.log(prevMousePos)
+            if (mousePos <= 30) return setVisible(true)
+            if (mousePos - prevMousePos > 90 && window.scrollY != 0 ) return setVisible(false)
+            return () => window.removeEventListener('mousemove'), setPrevMousePos(mousePos)
+        })
+    }, [prevScrollPos])
 
     const handleScroll = debounce(() => {
         const currentScrollPos = window.scrollY;
@@ -35,22 +40,21 @@ const Header = () => {
         setPrevScrollPos(currentScrollPos);
     }, 200);
 
-
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, [prevScrollPos, visible, handleScroll])
 
-
-
     return(
-            <header className="headerSection containerBlack" style={{top: visible ? '0' : '-100px'}}>
+            <header className="headerSection containerBlack" style={{top: visible ? '0' : '-60px'}}>
                 <img src={reactLogo} height="20vw" ></img>
                 <nav>
-                    <Link to="/" id="home" onClick={handleClick("landing")} >Home</Link>
-                    <Link to="/webDevelopment" id="webDevlopment" onClick={handleClick("webDevelopment")}>Website Devlopment</Link>
-                    <Link to="/musicEd" id="music" onClick={handleClick("musicEd")} >Music Education</Link>
-                    <Link to="/trombonist" id="trombonist" onClick={handleClick("trombone")} >Trombonist</Link>
+                    <ul>
+                        <li><Link to="/" id="home" onClick={handleClick("landing")}>Home</Link></li>
+                        <li><Link to="/webDevelopment" id="webDevelopment" onClick={handleClick("webDevelopment")}>Website Development</Link></li>
+                        <li><Link to="/musicEd" id="music" onClick={handleClick("musicEd")} >Music Education</Link></li>
+                        <li><Link to="/trombonist" id="trombonist" onClick={handleClick("trombone")} >Trombonist</Link></li>
+                    </ul>
                 </nav>
             </header>
     );

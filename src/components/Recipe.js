@@ -23,7 +23,7 @@ const Recipe = (props) => {
     };
 
     return (
-        <div className="recipeSection">
+        <div className="recipeSection containerBlue">
         <h1 className="span2">Step: {stepNumber} of {array.length}</h1>
         <img className="recipeImg" src = {step.imgCook} />
         <img className="recipeImg" src = {step.imgPrep}  />
