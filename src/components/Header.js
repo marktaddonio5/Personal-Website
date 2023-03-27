@@ -24,13 +24,11 @@ const Header = () => {
     useEffect(() =>{
         window.addEventListener('mousemove', (e) => {
             const mousePos = e.clientY
-            console.log(mousePos)
-            console.log(prevMousePos)
             if (mousePos <= 30) return setVisible(true)
             if (mousePos - prevMousePos > 90 && window.scrollY != 0 ) return setVisible(false)
             return () => window.removeEventListener('mousemove'), setPrevMousePos(mousePos)
         })
-    }, [prevScrollPos])
+    }, [prevScrollPos, handleClick])
 
     const handleScroll = debounce(() => {
         const currentScrollPos = window.scrollY;
