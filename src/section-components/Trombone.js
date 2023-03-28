@@ -1,4 +1,4 @@
-
+import VideoPlayer from "../components/VideoPlayer";
 
 const Trombone = () => {
     return(
@@ -7,7 +7,7 @@ const Trombone = () => {
             <h3>Professional Experience</h3>
             <p>Info about performing experience</p>
             <h3>Video and Audio</h3>
-            <p>Here put links and possibly in-line media</p>
+            <VideoPlayer />
         </section>
     )
 }

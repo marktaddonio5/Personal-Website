@@ -24,7 +24,7 @@ const Header = () => {
     useEffect(() =>{
         window.addEventListener('mousemove', (e) => {
             const mousePos = e.clientY
-            if (mousePos <= 30) return setVisible(true)
+            if (mousePos <= 16) return setVisible(true)
             if (mousePos - prevMousePos > 90 && window.scrollY != 0 ) return setVisible(false)
             return () => window.removeEventListener('mousemove'), setPrevMousePos(mousePos)
         })
@@ -44,7 +44,7 @@ const Header = () => {
     }, [prevScrollPos, visible, handleScroll])
 
     return(
-            <header className="headerSection containerBlack" style={{top: visible ? '0' : '-60px'}}>
+            <header className="headerSection containerBlack" style={{top: visible ? '0' : '-50px'}}>
                 <img src={reactLogo} height="20vw" ></img>
                 <nav>
                     <ul>

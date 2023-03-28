@@ -20,10 +20,11 @@ const Recipe = (props) => {
 
         if (props === "next") return (stepNext());
         if (props === "previous") return (stepPrevious());
+        return;
     };
 
     return (
-        <div className="recipeSection containerBlue">
+        <div className="recipeSection">
         <h1 className="span2">Step: {stepNumber} of {array.length}</h1>
         <img className="recipeImg" src = {step.imgCook} />
         <img className="recipeImg" src = {step.imgPrep}  />

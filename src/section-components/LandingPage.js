@@ -4,10 +4,14 @@ import headshot from "../assets/Headshot 2017 copy.jpg"
 const LandingPage = () => {
     
     return (
-        <section className="containerBeige landingSection">
+        <section className="containerBeige landingSection" id="landing-section">
             <article className="grid1-6">
                 <h1>Mark Taddonio</h1>
-                <p className="flexWrapper">Front-End Developer, Music Educator, Trombonist</p>
+                <p className="flex">
+                    <span>Front-End Developer</span>
+                    <span>Music Educator</span>
+                    <span>Trombonist</span>
+                </p>
             </article>
             <img className="headshot" src={headshot} />
             <article className="grid7-12">

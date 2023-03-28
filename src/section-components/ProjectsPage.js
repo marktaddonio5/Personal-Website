@@ -1,12 +1,4 @@
-import MusicEducation from "../section-components/MusicEducation"
-import WebDevelopment from "../section-components/WebDevelopment"
-import Trombone from "../section-components/Trombone"
-import LandingPage from "../section-components/LandingPage"
-import Recipe from "./Recipe"
-import {Routes, Route} from "react-router-dom"
-import ProjectsPage from "../section-components/ProjectsPage"
-
-
+import Recipe from "../components/Recipe"
 const recipeTemplate1 = [
     {
         imgPrep: require("../assets/greek salad.jpg"),
@@ -68,17 +60,15 @@ const recipeTemplate2 = [
     }
 ];
 
+const ProjectsPage = () => {
 
-const Main = () => {
     return(
-            <main className="gridContainer">
-                <LandingPage />
-                <WebDevelopment />
-                <ProjectsPage />
-                <MusicEducation />
-                <Trombone />
-            </main>
+        <div className="mainSection">
+        <Recipe arr={recipeTemplate1} />
+        <Recipe arr={recipeTemplate2} />
+        </div>
+       
     )
 }
 
-export default Main;
+export default ProjectsPage;
