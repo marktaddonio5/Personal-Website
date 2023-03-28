@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Personal-Website/static/css/main.e4498517.css",
+    "main.js": "/Personal-Website/static/js/main.b444e936.js",
+    "static/js/787.93fcaa11.chunk.js": "/Personal-Website/static/js/787.93fcaa11.chunk.js",
+    "static/media/greek salad.jpg": "/Personal-Website/static/media/greek salad.bed423a1fab5b210e347.jpg",
+    "static/media/Headshot 2017 copy.jpg": "/Personal-Website/static/media/Headshot 2017 copy.41a2c5a99dffb095ccab.jpg",
+    "static/media/CourseraFront-EndCertificatecopy.jpg": "/Personal-Website/static/media/CourseraFront-EndCertificatecopy.d000f358050a228a5a6c.jpg",
+    "static/media/CourseraIntroOct30.jpg": "/Personal-Website/static/media/CourseraIntroOct30.594d3abbc3a26f941210.jpg",
+    "static/media/CourseraDevCapstoneMar11.jpg": "/Personal-Website/static/media/CourseraDevCapstoneMar11.bc92131e24889cb34080.jpg",
+    "static/media/CourseraJSNov11pdf.jpg": "/Personal-Website/static/media/CourseraJSNov11pdf.d9ba5c5bbe7922bd6ff8.jpg",
+    "static/media/CourseraCodingInterviewMar21.jpg": "/Personal-Website/static/media/CourseraCodingInterviewMar21.cebcb24d53206a38f978.jpg",
+    "static/media/CourseraUX:UIFeb16.jpg": "/Personal-Website/static/media/CourseraUX:UIFeb16.5c8304fb7f06ccb29a03.jpg",
+    "static/media/CourseraInDepthHTMLCSSJan9.jpg": "/Personal-Website/static/media/CourseraInDepthHTMLCSSJan9.4a445dc59c934b291a58.jpg",
+    "static/media/CourseraAdvReactFeb13.jpg": "/Personal-Website/static/media/CourseraAdvReactFeb13.6f01ab7865773700d320.jpg",
+    "static/media/CourseraVersionControlNov19.jpg": "/Personal-Website/static/media/CourseraVersionControlNov19.a48c0d4f208dbb6e8dba.jpg",
+    "static/media/CourseraReactBasicsJan21.jpg": "/Personal-Website/static/media/CourseraReactBasicsJan21.24d3e61b385c1cadb81a.jpg",
+    "static/media/logo.svg": "/Personal-Website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Personal-Website/index.html",
+    "main.e4498517.css.map": "/Personal-Website/static/css/main.e4498517.css.map",
+    "main.b444e936.js.map": "/Personal-Website/static/js/main.b444e936.js.map",
+    "787.93fcaa11.chunk.js.map": "/Personal-Website/static/js/787.93fcaa11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4498517.css",
+    "static/js/main.b444e936.js"
+  ]
+}
