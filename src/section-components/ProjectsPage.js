@@ -67,7 +67,6 @@ const ProjectsPage = () => {
         <Recipe arr={recipeTemplate1} />
         <Recipe arr={recipeTemplate2} />
         </div>
-       
     )
 }
 
