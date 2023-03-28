@@ -48,10 +48,10 @@ const Header = () => {
                 <img src={reactLogo} height="20vw" ></img>
                 <nav>
                     <ul>
-                        <li><Link to="/" id="home" onClick={handleClick("landing")}>Home</Link></li>
-                        <li><Link to="/webDevelopment" id="webDevelopment" onClick={handleClick("webDevelopment")}>Website Development</Link></li>
-                        <li><Link to="/musicEd" id="music" onClick={handleClick("musicEd")} >Music Education</Link></li>
-                        <li><Link to="/trombonist" id="trombonist" onClick={handleClick("trombone")} >Trombonist</Link></li>
+                        <li><Link id="home" onClick={handleClick("landing")}>Home</Link></li>
+                        <li><Link  id="webDevelopment" onClick={handleClick("webDevelopment")}>Website Development</Link></li>
+                        <li><Link id="music" onClick={handleClick("musicEd")} >Music Education</Link></li>
+                        <li><Link id="trombonist" onClick={handleClick("trombone")} >Trombonist</Link></li>
                     </ul>
                 </nav>
             </header>

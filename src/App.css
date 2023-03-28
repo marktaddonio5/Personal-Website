@@ -154,11 +154,11 @@ a {
 }
 
 a:visited {
-  color:bisque;
+  color: cadetblue;
 }
 
 a:hover {
-  color:aqua
+  color:bisque
 }
 
 .certContainer {
