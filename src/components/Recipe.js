@@ -25,12 +25,12 @@ const Recipe = (props) => {
 
     return (
         <div className="recipeSection">
-        <h1 className="span2">Step: {stepNumber} of {array.length}</h1>
-        <img className="recipeImg" src = {step.imgCook} />
-        <img className="recipeImg" src = {step.imgPrep}  />
-        <p className="span2">{step.directions}</p>
-        <button type="button" onClick={() => handleButtons('previous')}>Previous Step</button>
-        <button type="button" onClick={() => handleButtons('next')}>Next Step</button>
+        <h1 className="grid1"pa>Step: {stepNumber} of {array.length}</h1>
+        <img className="grid2 recipeImg" src = {step.imgCook} />
+        <img className="grid3 recipeImg" src = {step.imgPrep}  />
+        <p className="grid4">{step.directions}</p>
+        <button className="grid5" type="button" onClick={() => handleButtons('previous')}>Previous Step</button>
+        <button className="grid6" type="button" onClick={() => handleButtons('next')}>Next Step</button>
         </div>
     )
 }

@@ -5,16 +5,16 @@ const LandingPage = () => {
     
     return (
         <section className="containerBeige landingSection" id="landing-section">
-            <article className="grid1-6">
+            <article className="grid1">
                 <h1>Mark Taddonio</h1>
-                <p className="flex">
+                <p className="flex" style={{lineHeight : 2}}>
                     <span>Front-End Developer</span>
                     <span>Music Educator</span>
                     <span>Trombonist</span>
                 </p>
             </article>
-            <img className="headshot" src={headshot} />
-            <article className="grid7-12">
+            <img className="headshot grid2" src={headshot} />
+            <article className="grid3">
                 <h1>Contact</h1>
                 <p className="flex">
                     <span>marktaddonio5@gmail.com</span>

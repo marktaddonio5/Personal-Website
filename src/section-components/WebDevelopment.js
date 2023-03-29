@@ -1,8 +1,7 @@
 import Recipe from "../components/Recipe";
 import { useEffect } from "react";
 import Coursera from "../assets/CourseraFront-EndCertificatecopy.jpg"
-import {Document} from "react-pdf"
-import { useState } from "react";
+import ProjectsPage from "./ProjectsPage";
 
 
 const certificates = [
@@ -39,7 +38,9 @@ const WebDevelopment = () => {
             <a href="https://github.com/marktaddonio5/Personal-Website">/* Click here Github link for this website */</a>
             <h2>Credentials</h2>
             <article className="certContainer"><img src={Coursera} className="certs" alt="Front-end Developer certification from Coursera and Meta" />{certs}</article>
+            <ProjectsPage />
         </section>
+        
     )
 }
 

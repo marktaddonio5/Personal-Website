@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Recipe from "../components/Recipe"
 const recipeTemplate1 = [
     {
@@ -61,11 +62,24 @@ const recipeTemplate2 = [
 ];
 
 const ProjectsPage = () => {
+    const [visible, setVisible] = useState(false)
 
-    return(
-        <div className="mainSection">
-        <Recipe arr={recipeTemplate1} />
-        <Recipe arr={recipeTemplate2} />
+    const clickShow = () => {
+        if (visible === false) return setVisible(true)
+        if (visible === true) return setVisible(false)
+    }
+    if (visible === true) return(
+        <div className="projectsSection">
+            <button type="button" onClick={clickShow} >Hide React Component Projects</button>
+            <h2>Recipe displaying Component</h2>
+            <p>This component demonstrates use of array methods such as .map. It also includes state management using useState to update step numbers and what images are displayed. It is included with two iterations to display re-usability with different array data</p>
+            <Recipe arr={recipeTemplate1} />
+            <Recipe arr={recipeTemplate2} />
+        </div>
+    )
+    else return (
+        <div>
+            <button type="button" onClick={clickShow} >Show React Component Projects</button>
         </div>
     )
 }
