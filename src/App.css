@@ -162,10 +162,9 @@ nav > ul > li {
 }
 
 button {
-  height: 6vw;
-  width: 100%;
-  box-shadow: 20px #282c34;
-  border-radius: 5%;
+  height: 8vh;
+  width: 15vw;
+  border-radius: 15%;
 }
 a {
   text-decoration: none;

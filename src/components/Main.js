@@ -4,7 +4,7 @@ import Trombone from "../section-components/Trombone"
 import LandingPage from "../section-components/LandingPage"
 import Recipe from "./Recipe"
 import {Routes, Route} from "react-router-dom"
-import ProjectsPage from "../section-components/ProjectsPage"
+import ProjectsPage from "../section-components/ProjectsComponent"
 
 
 
