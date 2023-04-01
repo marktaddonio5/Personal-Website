@@ -6,7 +6,8 @@ const VideoPlayer = () => {
     return (
         <YouTube
             videoId={url}
-            loading="loading"
+            id="video"
+            loading="lazy"
         />
     )
 }

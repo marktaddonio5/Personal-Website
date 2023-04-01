@@ -1,6 +1,5 @@
-import Recipe from "../components/Recipe";
-import Coursera from "../assets/CourseraFront-EndCertificatecopy.jpg"
 import ProjectsComponent from "../components/ProjectsComponent";
+import Recipe from "../components/Recipe";
 import Form from "../components/Form";
 const recipeTemplate1 = [
     {
@@ -62,43 +61,24 @@ const recipeTemplate2 = [
         directions: "5"
     }
 ];
+const ProjectsPage = () => {
 
-const certificates = [
-    require('../assets/CourseraIntroOct30.jpg'),
-    require('../assets/CourseraJSNov11pdf.jpg'),
-    require('../assets/CourseraVersionControlNov19.jpg'),
-    require('../assets/CourseraInDepthHTMLCSSJan9.jpg'),
-    require('../assets/CourseraReactBasicsJan21.jpg'),
-    require('../assets/CourseraAdvReactFeb13.jpg'),
-    require('../assets/CourseraUX:UIFeb16.jpg'),
-    require('../assets/CourseraDevCapstoneMar11.jpg'),
-    require('../assets/CourseraCodingInterviewMar21.jpg'),
-]
-
-const certs = certificates.map(items => {
-   return (
-    <img key={items} src={items} alt="certificate image" className="certs" />
-)})
-
-
-
-const WebDevelopment = () => {
-    return(
-        <section className="mainSection containerBlue" id="webDevelopment-section">
-            <h1>React Developer</h1>
-            <a href="https://github.com/marktaddonio5/Personal-Website">/* Click here Github link for this website */</a>
-            <h2>Languages</h2>
-            <p>
-                <span>HTML, CSS, JavaScript, React, Jest</span>
-            </p>
-            <h2>Credentials</h2>
-            <article className="certContainer">
-                <img src={Coursera} className="certs" alt="Front-end Developer certification from Coursera and Meta" />
-                {certs}
-            </article>
+    return (
+        <section className="mainSection" id="projects-section">
+        <h1>React Component Projects</h1>
+        <ProjectsComponent
+                project1={<Recipe arr={recipeTemplate1} />}
+                project2={<Recipe arr={recipeTemplate2} />}
+                heading={"Recipe Display Component"}
+                description={"This component demonstrates use of array methods such as .map. It also includes state management using useState to update step numbers and what images are displayed. It is included with two iterations to display re-usability with different array data."}
+            />
+        <ProjectsComponent
+                project1={<Form />}
+                heading={"Sample Account Creation Form"}
+                description={"placeholder text"}
+            />
         </section>
-        
     )
 }
 
-export default WebDevelopment;
+export default ProjectsPage;

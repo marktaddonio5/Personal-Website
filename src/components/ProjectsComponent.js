@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Recipe from "../components/Recipe"
+import Recipe from "./Recipe"
 /* 
 Accepts the following props:
 - project1
@@ -28,7 +28,7 @@ const ProjectsComponent = (props) => {
         </div>
     )
     else return (
-        <div classname="projectsSection">
+        <div className="projectsSection">
             <button type="button" onClick={clickShow} >Show {props.heading}</button>
         </div>
     )

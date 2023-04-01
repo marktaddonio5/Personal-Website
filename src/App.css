@@ -123,27 +123,6 @@ body {
 
 
 
-/* Recipe Section Styling */
-.recipeSection{
-  display: grid;
-  grid-template-columns: repeat(3 1fr);
-  grid-template-rows: repeat(4 1fr);
-  grid-template-areas:
-    "area1 . . ."
-    "area2 area2 area3 area3"
-    "area4 area4 area4 area4"
-    "area5 area5 area6 area6" ;
-  border-style: solid;
-  place-items: center;
-  padding: 2vw;
-  background-color:darkcyan
-}
-
-.recipeImg {
-  width: 40vw;
-  border-radius: 5%;
-}
-
 /* Elements */
 nav > ul {
   display: flex;
@@ -159,13 +138,16 @@ nav > ul {
 
 nav > ul > li {
   list-style: none;
-}
+  
 
+}
+/*
 button {
   height: 8vh;
   width: 15vw;
-  border-radius: 15%;
+  border-radius: 5px;
 }
+*/
 a {
   text-decoration: none;
 }
@@ -198,6 +180,106 @@ flex-grow: 2;
 flex-basis: 30%;
 
 }
+/* Recipe Section Styling */
+.recipeSection{
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: repeat(4 1fr);
+  grid-template-areas:
+    "area1 . . ."
+    "area2 area2 area3 area3"
+    "area4 area4 area4 area4"
+    "area5 area5 area6 area6" ;
+  border-style: solid;
+  place-items: center;
+  padding: 2vw;
+  background-color:darkcyan
+}
+
+.recipeImg {
+  width: 40vw;
+  border-radius: 5%;
+}
+
+#video{
+  max-width:80vw;
+}
+
+/* Form */
+
+@media only screen and (min-width: 600px){
+  /*large screen*/
+  form {
+    display: grid;
+    grid-template-columns:4fr 8fr;
+    grid-template-rows: repeat(8 25px);
+    column-gap: 10px;
+    row-gap: 30px;
+    background-color:cornflowerblue;
+    width:80vw;
+    padding: 20px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+  }
+  label {
+    justify-self: right;
+    align-self: center;
+    display: flex;
+    font-weight: 600;
+  }
+  input {
+    height: 25px;
+    border-radius: 5px;
+    max-width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 1em;
+  }
+  form > h1 {
+    grid-column: span 2;
+    justify-self: center;
+  }
+}
+@media only screen and (max-width: 599px){
+  /*small screen */
+  form{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color:cornflowerblue;
+    width:80vw;
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 5px;
+  }
+  label {
+    justify-self: right;
+    align-self: center;
+    display: flex;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+  input {
+    height: 25px;
+    border-radius: 5px;
+    width: 90%;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 1em;
+    justify-self: center;
+  }
+}
+
+.formButton {
+  grid-column: 2;
+  max-width: 500px;
+  height: 25px;
+}
+
+
 
 
 /* defaults */
