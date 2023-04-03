@@ -44,12 +44,15 @@ body {
 /* Sections */
 
 .headerSection{
-  display: inline-flex;
-  max-height:5vh;
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  grid-template-areas:
+  "area1 area2";
+  height: 50px;
   width: 100vw;
   place-items: center;
   justify-content: center;
-  padding: 2vh;
+  padding: 5px;
   position: fixed;
   transition: top, .4s;
 }
@@ -126,19 +129,11 @@ body {
 /* Elements */
 nav > ul {
   display: flex;
-  flex-flow: row;
-  flex-direction: row;
-  column-gap: 15vw;
-  row-gap: 1vh;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2vw;
-  height:fit-content;
+  gap: 2vw;
 }
 
 nav > ul > li {
   list-style: none;
-  
 
 }
 /*
