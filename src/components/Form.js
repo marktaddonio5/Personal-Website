@@ -28,96 +28,110 @@ const Form = () => {
         },
         validationSchema: Yup.object().shape({
             fname: Yup.string()
-                .required("Please enter your first name"),
+                .required("Required"),
             lname: Yup.string()
-                .required("Please enter your last name"),
+                .required("Required"),
             uname: Yup.string()
-                .required("Please create a user name")
-                .min(3, "must be at least three characters long")
+                .required("Required")
+                .min(3, "User name must be at least three characters long")
                 .max(20, "User name cannot be more than twenty characters long"),
             email: Yup.string()
                 .email("Invalid email address")
-                .required("Please enter an email address"),
+                .required("Required"),
             password: Yup.string()
-                .required("Please create a password"),
+                .required("Required")
+                .min(5, "Password must be at least five characters")
+                .max(15, "Password cannot be more than fifteen characters"),
             phone: Yup.string()
                 .max(12, "please enter a valid phone number")
-        })
+        }),
+        onSubmit: (values, e) => {
+            alert(JSON.stringify(values, null, 1))
+        },
     })
 
     return (
-        <form onSubmit="">
+        <form onSubmit={formik.handleSubmit}>
             <h1>Create a new account!</h1>
-            <label for="fname">First Name</label>
+            <label htmlFor="fname">First Name</label>
             <input
                 id="fname"
+                name="fname"
                 type="text"
                 placeholder="First name"
-                required
                 onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 value={formik.values.fname}
                 ></input>
-            {formik.touched && formik.errors.fname ? (
-                <span classname="error">{formik.errors.fname}</span>
-            ) : null}
+                {formik.touched.fname && formik.errors.fname ? (
+                    <span className="error">{formik.errors.fname}</span>
+                ) : null}
             <label for="lname">Last Name</label>
             <input
                 id="lname"
+                name="lname"
                 type="text"
                 placeholder="Last name"
-                required
                 onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 value={formik.values.lname}
                 ></input>
+                {formik.touched.lname && formik.errors.lname ? (
+                <span className="error">{formik.errors.lname}</span>
+                ) : null}
             <label for="uname">Create User Name</label>
             <input
                 id="uname"
+                name="uname"
                 type="text"
                 placeholder="User name"
-                required
                 onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 value={formik.values.uname}
                 ></input>
-            {formik.touched && formik.errors.uname ? (
-                <span classname="error">{formik.errors.uname}</span>
-            ) : null}
+                {formik.touched.uname && formik.errors.uname ? (
+                <span className="error">{formik.errors.uname}</span>
+                ) : null}
             <label for="email">Email Address</label>
             <input
                 id="email"
+                name="email"
                 type="text"
                 placeholder="johnDoe@gmail.com"
-                required
                 onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 value={formik.values.email}
                 ></input>
+                {formik.touched.email && formik.errors.email ? (
+                <span className="error">{formik.errors.email}</span>
+                ) : null}
             <label for="password1">Choose a password</label>
             <input
-                id="password1"
+                id="password"
                 type="password"
+                name="password"
                 placeholder="(must be 5-14 characters)"
-                minLength="5"
-                maxLength="15"
-                required
                 onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 value={formik.values.password}
                 ></input>
-            <label for="password2">Re-type password</label>
-            <input
-                id="password2"
-                type="password"
-                required
-                onChange={formik.handleChange}
-                value={formik.values.password}
-                ></input>
+                {formik.touched.password && formik.errors.password ? (
+                <span className="error">{formik.errors.password}</span>
+                ) : null}
             <label for="phone">Phone Number</label>
             <input
                 id="phone"
+                name="phone"
                 type="tel"
                 placeholder="123-456-7891"
                 onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 value={formik.values.phone}
                 ></input>
-            <input className="formButton" type='submit' value="submit"></input>
+                {formik.touched.phone && formik.errors.phone ? (
+                <span className="error">{formik.errors.phone}</span>
+                ) : null}
+            <input className="formButton" type='submit' value="Submit"></input>
         </form>
     )
 

@@ -211,10 +211,10 @@ flex-basis: 30%;
   /*large screen*/
   form {
     display: grid;
-    grid-template-columns:4fr 8fr;
+    grid-template-columns:2fr 3fr 2fr;
     grid-template-rows: repeat(8 25px);
     column-gap: 10px;
-    row-gap: 30px;
+    row-gap: 20px;
     background-color:cornflowerblue;
     width:80vw;
     padding: 20px;
@@ -227,6 +227,7 @@ flex-basis: 30%;
     align-self: center;
     display: flex;
     font-weight: 600;
+    grid-column: 1;
   }
   input {
     height: 25px;
@@ -235,12 +236,14 @@ flex-basis: 30%;
     border-style: solid;
     border-width: 1px;
     font-size: 1em;
+    grid-column: 2;
   }
   form > h1 {
-    grid-column: span 2;
+    grid-column: span 3;
     justify-self: center;
   }
 }
+
 @media only screen and (max-width: 599px){
   /*small screen */
   form{
@@ -279,18 +282,23 @@ flex-basis: 30%;
   height: 25px;
 }
 
+.error {
+  color:gold;
+  grid-column: 3;
+  align-self: top;
+  font-style: italic;
+}
 
+input:invalid {
+  border-color: red;
+}
 
 
 /* defaults */
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-
 
 .App-header {
   background-color: #282c34;
