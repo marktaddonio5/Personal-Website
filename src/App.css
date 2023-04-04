@@ -204,7 +204,7 @@ flex-basis: 30%;
 
 @media only screen and (min-width: 600px){
   /*large screen*/
-  form {
+  .form {
     display: grid;
     grid-template-columns:2fr 3fr 2fr;
     grid-template-rows: repeat(8 25px);
@@ -241,7 +241,7 @@ flex-basis: 30%;
 
 @media only screen and (max-width: 599px){
   /*small screen */
-  form{
+  .form{
     display: flex;
     flex-direction: column;
     place-items: center;

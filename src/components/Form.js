@@ -13,10 +13,19 @@ password1 and password2 must be the same
 */
 import {useFormik} from "formik"
 import * as Yup from "yup";
+import FormResult from "./FormResult";
+import { useState } from "react";
 
 
 
 const Form = () => {
+    const [submitted, setSubmitted] = useState(true)
+
+    const handleSubmitted = () => {
+        if (submitted === false) {setSubmitted(true)}
+        if (submitted === true) {setSubmitted(false)}
+    }
+
     const formik = useFormik({
         initialValues: {
             fname:"",
@@ -28,9 +37,13 @@ const Form = () => {
         },
         validationSchema: Yup.object().shape({
             fname: Yup.string()
-                .required("Required"),
+                .required("Required")
+                .min(2, "Please enter your name")
+                .max(50, "This form can accepts names with maximum 50 characters"),
             lname: Yup.string()
-                .required("Required"),
+                .required("Required")
+                .min(2, "Please enter your name")
+                .max(50, "This form can accepts names with maximum 50 characters"),
             uname: Yup.string()
                 .required("Required")
                 .min(3, "User name must be at least three characters long")
@@ -45,13 +58,15 @@ const Form = () => {
             phone: Yup.string()
                 .max(12, "please enter a valid phone number")
         }),
-        onSubmit: (values, e) => {
-            alert(JSON.stringify(values, null, 1))
+        onSubmit: (values) => {
+            /*alert(JSON.stringify(values, null, 1))*/
+            handleSubmitted()
         },
     })
 
+    if (submitted === false)
     return (
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit} className="form">
             <h1>Create a new account!</h1>
             <label htmlFor="fname">First Name</label>
             <input
@@ -135,6 +150,18 @@ const Form = () => {
         </form>
     )
 
+    if (submitted === true)
+    return (
+        <div className="form">
+        <FormResult 
+            fname={formik.values.fname}
+            lname={formik.values.lname}
+            uname={formik.values.uname}
+            email={formik.values.email}
+        />
+        <button onClick={handleSubmitted}>Return to form</button>
+        </div>
+    )
 }
 
 export default Form;

@@ -61,6 +61,7 @@ const recipeTemplate2 = [
         directions: "5"
     }
 ];
+
 const ProjectsPage = () => {
 
     return (
@@ -75,7 +76,7 @@ const ProjectsPage = () => {
         <ProjectsComponent
                 project1={<Form />}
                 heading={"Sample Account Creation Form"}
-                description={"placeholder text"}
+                description={"This form was created using useFormik and Yup for validation messages. It uses component props to display form data on a confirmation page."}
             />
         </section>
     )
