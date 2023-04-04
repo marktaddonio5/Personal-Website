@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.ba5bfd7e.css",
-    "main.js": "/Personal-Website/static/js/main.9edb2e8a.js",
+    "main.css": "/Personal-Website/static/css/main.29d0b3ad.css",
+    "main.js": "/Personal-Website/static/js/main.d4825c4b.js",
     "static/js/787.93fcaa11.chunk.js": "/Personal-Website/static/js/787.93fcaa11.chunk.js",
     "static/media/greek salad.jpg": "/Personal-Website/static/media/greek salad.bed423a1fab5b210e347.jpg",
     "static/media/Headshot 2017 copy.jpg": "/Personal-Website/static/media/Headshot 2017 copy.41a2c5a99dffb095ccab.jpg",
@@ -17,12 +17,12 @@
     "static/media/CourseraReactBasicsJan21.jpg": "/Personal-Website/static/media/CourseraReactBasicsJan21.24d3e61b385c1cadb81a.jpg",
     "static/media/logo.svg": "/Personal-Website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Personal-Website/index.html",
-    "main.ba5bfd7e.css.map": "/Personal-Website/static/css/main.ba5bfd7e.css.map",
-    "main.9edb2e8a.js.map": "/Personal-Website/static/js/main.9edb2e8a.js.map",
+    "main.29d0b3ad.css.map": "/Personal-Website/static/css/main.29d0b3ad.css.map",
+    "main.d4825c4b.js.map": "/Personal-Website/static/js/main.d4825c4b.js.map",
     "787.93fcaa11.chunk.js.map": "/Personal-Website/static/js/787.93fcaa11.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba5bfd7e.css",
-    "static/js/main.9edb2e8a.js"
+    "static/css/main.29d0b3ad.css",
+    "static/js/main.d4825c4b.js"
   ]
 }
