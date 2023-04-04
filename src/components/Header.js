@@ -45,8 +45,7 @@ const Header = () => {
 
     return(
             <header className="headerSection containerBlack" style={{top: visible ? '0' : '-60px'}}>
-                <img src={reactLogo} height="20vw" className="area1" ></img>
-                <nav className="area2">
+                <nav>
                     <ul>
                         <li><Link id="home" onClick={handleClick("landing")}>Home</Link></li>
                         <li><Link id="webDevelopment" onClick={handleClick("webDevelopment")}>Website Development</Link></li>

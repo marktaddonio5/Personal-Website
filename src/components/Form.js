@@ -19,7 +19,7 @@ import { useState } from "react";
 
 
 const Form = () => {
-    const [submitted, setSubmitted] = useState(true)
+    const [submitted, setSubmitted] = useState(false)
 
     const handleSubmitted = () => {
         if (submitted === false) {setSubmitted(true)}
