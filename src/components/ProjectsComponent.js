@@ -19,7 +19,7 @@ const ProjectsComponent = (props) => {
 
     if (visible === true) return(
         <div className="projectsSection">
-            <button type="button" onClick={clickShow} >Hide React {props.heading}</button>
+            <button type="button" onClick={clickShow} >Hide {props.heading}</button>
             <h2>{props.heading}</h2>
             <p>{props.description}</p>
             {props.project1}

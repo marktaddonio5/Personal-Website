@@ -86,7 +86,7 @@ Link {
 .landingSection {
   min-height: 91vh;
   max-height: fit-content;
-  margin-top: 9vh;
+  margin-top: 70px;
   /*
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
