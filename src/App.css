@@ -64,6 +64,10 @@ nav > ul > li {
   padding-right: 2vw;
 }
 
+Link {
+  color:blue
+}
+
 .mainSection {
   display: inline-flex;
   flex-direction: column;
@@ -80,7 +84,8 @@ nav > ul > li {
 
 
 .landingSection {
-  height: 91vh;
+  min-height: 91vh;
+  max-height: fit-content;
   margin-top: 9vh;
   /*
   display: grid;
@@ -123,6 +128,7 @@ nav > ul > li {
 
 a {
   text-decoration: none;
+  color: cadetblue
 }
 
 
@@ -133,6 +139,7 @@ a:hover {
 a:visited{
   color:azure
 }
+
 
 
 .certContainer {
