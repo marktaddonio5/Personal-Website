@@ -5,6 +5,7 @@ const LandingPage = () => {
     
     return (
         <section className="containerBeige landingSection" id="landing-section">
+            <img className="headshot grid2" src={headshot} />
             <article className="grid1">
                 <h1>Mark Taddonio</h1>
                 <p className="flex" style={{lineHeight : 2}}>
@@ -13,7 +14,6 @@ const LandingPage = () => {
                     <span>Trombonist</span>
                 </p>
             </article>
-            <img className="headshot grid2" src={headshot} />
             <article className="grid3">
                 <h1>Contact</h1>
                 <p className="flex">
