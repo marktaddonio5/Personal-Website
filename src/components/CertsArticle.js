@@ -49,14 +49,14 @@ const ImageShow = (props) => {
     if (visible === true) {
     return (
         <>
-        <img className="cert" style={{animationName: visible ? "certa" : "certb" }}  key={props.name} src={props.src} alt={props.name} />
-        <button onClick={onClick}>Hide {props.name} Certificate</button>
+        <button className="certButton column2" onClick={onClick}>Hide {props.name} Certificate</button>
+        <img className="certimg columnSpan" style={{animationName: "certa"}}  key={props.name} src={props.src} alt={props.name} />
         </>
     )
     }
     else return (
         <>
-        <button onClick={onClick}>Show {props.name} Certificate</button>
+        <button className="column2 certButton" onClick={onClick}>Show {props.name} Certificate</button>
         </>
     )
 }
@@ -64,8 +64,8 @@ const ImageShow = (props) => {
 const certs = certificates.map(items => {
     return (
         <>
-            <li>{items.name}</li>
-            <ImageShow className="column2" key={items.name} src={items.src} />
+            <li className="column1">{items.name}</li>
+            <ImageShow key={items.name} src={items.src} />
         </>
     )
 })
@@ -74,12 +74,12 @@ const certs = certificates.map(items => {
 const CertsArticle = () => {
     
     return (
-        <div>
-        <h3 className="column1">Meta Front-End Developer Professional Certificate</h3>
-            <label className="column1" for="courses">Courses</label>
-            <ol className="column1">
-               {certs}
-            </ol>
+        <div className="credential">
+        <h3 style={{padding: "5px"}}>Meta Front-End Developer Professional Certificate</h3>
+        <label for="courses">Courses</label>
+        <ul className="ulGrid">
+            {certs}
+        </ul>
         </div>
     )
 }

@@ -5,23 +5,6 @@ import Form from "../components/Form";
 import { useState } from "react";
 import CertsArticle from "../components/CertsArticle";
 
-const certificates = [
-    require('../assets/CourseraIntroOct30.jpg'),
-    require('../assets/CourseraJSNov11pdf.jpg'),
-    require('../assets/CourseraVersionControlNov19.jpg'),
-    require('../assets/CourseraInDepthHTMLCSSJan9.jpg'),
-    require('../assets/CourseraReactBasicsJan21.jpg'),
-    require('../assets/CourseraAdvReactFeb13.jpg'),
-    require('../assets/CourseraUX:UIFeb16.jpg'),
-    require('../assets/CourseraDevCapstoneMar11.jpg'),
-    require('../assets/CourseraCodingInterviewMar21.jpg'),
-]
-
-const certs = certificates.map(items => {
-   return (
-    <img key={items} src={items} alt="certificate image" className="certs" />
-)})
-
 
 const WebDevelopment = () => {
 
