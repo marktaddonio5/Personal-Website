@@ -42,7 +42,7 @@ const Header = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, [prevScrollPos, visible, handleScroll])
-
+    
     return(
             <header className="headerSection containerBlack" style={{top: visible ? '0' : '-60px'}}>
                 <nav>

@@ -75,7 +75,7 @@ const CertsArticle = () => {
     
     return (
         <div className="credential">
-        <h3 style={{padding: "5px"}}>Meta Front-End Developer Professional Certificate</h3>
+        <h3 style={{textDecoration: "underline"}}>Meta Front-End Developer Professional Certificate</h3>
         <label for="courses">Courses</label>
         <ul className="ulGrid">
             {certs}
