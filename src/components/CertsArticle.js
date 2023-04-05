@@ -49,7 +49,7 @@ const ImageShow = (props) => {
     if (visible === true) {
     return (
         <>
-        <img key={props.name} src={props.src} alt={props.name} className="certs" />
+        <img className="cert" style={{animationName: visible ? "certa" : "certb" }}  key={props.name} src={props.src} alt={props.name} />
         <button onClick={onClick}>Hide {props.name} Certificate</button>
         </>
     )
@@ -65,7 +65,7 @@ const certs = certificates.map(items => {
     return (
         <>
             <li>{items.name}</li>
-            <ImageShow key={items.name} src={items.src} />
+            <ImageShow className="column2" key={items.name} src={items.src} />
         </>
     )
 })
@@ -74,13 +74,13 @@ const certs = certificates.map(items => {
 const CertsArticle = () => {
     
     return (
-        <>
-        <h3>Meta Front-End Developer Professional Certificate</h3>
-            <label for="courses">Courses</label>
-            <ol className="courses">
+        <div>
+        <h3 className="column1">Meta Front-End Developer Professional Certificate</h3>
+            <label className="column1" for="courses">Courses</label>
+            <ol className="column1">
                {certs}
             </ol>
-        </>
+        </div>
     )
 }
 

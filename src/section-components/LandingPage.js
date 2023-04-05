@@ -8,13 +8,13 @@ const LandingPage = () => {
             <img className="headshot grid2" src={headshot} />
             <article className="grid1">
                 <h1>Mark Taddonio</h1>
-                <p className="flex" style={{lineHeight : 2}}>
+                <p className="flex" style={{lineHeight: 2}}>
                     <span>Front-End Developer</span>
                     <span>Music Educator</span>
                     <span>Trombonist</span>
                 </p>
             </article>
-            <article className="grid3">
+            <article className="grid3" >
                 <h1>Contact</h1>
                 <p className="flex">
                     <span>marktaddonio5@gmail.com</span>
