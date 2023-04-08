@@ -77,6 +77,9 @@ const Form = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.fname}
+                style={
+                    {borderColor: formik.touched.fname && formik.errors.fname ? "red" : null }
+                }
                 ></input>
                 {formik.touched.fname && formik.errors.fname ? (
                     <span className="error">{formik.errors.fname}</span>
@@ -90,6 +93,9 @@ const Form = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.lname}
+                style={
+                    {borderColor: formik.touched.lname && formik.errors.lname ? "red" : null }
+                }
                 ></input>
                 {formik.touched.lname && formik.errors.lname ? (
                 <span className="error">{formik.errors.lname}</span>
@@ -103,6 +109,9 @@ const Form = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.uname}
+                style={
+                    {borderColor: formik.touched.uname && formik.errors.uname ? "red" : null }
+                }
                 ></input>
                 {formik.touched.uname && formik.errors.uname ? (
                 <span className="error">{formik.errors.uname}</span>
@@ -116,6 +125,9 @@ const Form = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.email}
+                style={
+                    {borderColor: formik.touched.email && formik.errors.email ? "red" : null }
+                }
                 ></input>
                 {formik.touched.email && formik.errors.email ? (
                 <span className="error">{formik.errors.email}</span>
@@ -129,6 +141,9 @@ const Form = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.password}
+                style={
+                    {borderColor: formik.touched.password && formik.errors.password ? "red" : null }
+                }
                 ></input>
                 {formik.touched.password && formik.errors.password ? (
                 <span className="error">{formik.errors.password}</span>
@@ -142,6 +157,9 @@ const Form = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.phone}
+                style={
+                    {borderColor: formik.touched.phone && formik.errors.phone ? "red" : null }
+                }
                 ></input>
                 {formik.touched.phone && formik.errors.phone ? (
                 <span className="error">{formik.errors.phone}</span>

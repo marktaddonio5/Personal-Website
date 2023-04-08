@@ -11,8 +11,8 @@ const WebDevelopment = () => {
     return(
         <section className="mainSection containerBlue" id="webDevelopment-section">
             <h1>React Developer</h1>
-            <a href="https://github.com/marktaddonio5/Personal-Website">/* Click here Github link for this website */</a>
-            <h2>Languages</h2>
+            <a className="bodyLink" href="https://github.com/marktaddonio5/Personal-Website">/* Click here Github link for this website */</a>
+            <h2>Languages and Technical Skills</h2>
             <p>
                 <span>HTML, CSS, JavaScript, React, Jest</span>
             </p>

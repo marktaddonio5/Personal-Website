@@ -63,10 +63,10 @@ const ImageShow = (props) => {
 
 const certs = certificates.map(items => {
     return (
-        <>
-            <li className="column1">{items.name}</li>
+        <li className="columnSpan ulGrid1 liLine">
+            <p className="column1">{items.name}</p>
             <ImageShow key={items.name} src={items.src} />
-        </>
+        </li>
     )
 })
  
@@ -75,11 +75,11 @@ const CertsArticle = () => {
     
     return (
         <div className="credential">
-        <h3 style={{textDecoration: "underline"}}>Meta Front-End Developer Professional Certificate</h3>
-        <label for="courses">Courses</label>
-        <ul className="ulGrid">
-            {certs}
-        </ul>
+            <h3 style={{textDecoration: "underline", justifySelf: "center", padding: "20px"}}>Meta Front-End Developer Professional Certificate</h3>
+            <label for="courses">Courses</label>
+            <ul className="ulGrid">
+                {certs}
+            </ul>
         </div>
     )
 }
