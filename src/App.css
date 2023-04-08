@@ -1,7 +1,8 @@
 
 body {
   background-color: beige;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Fira Sans' Black  'PT Serif';
+
 }
 
 /* Containers */
@@ -58,6 +59,7 @@ body {
 nav > ul {
   display: flex;
   flex-wrap: wrap;
+  place-items: center;
 }
 
 ul > li {
@@ -93,7 +95,7 @@ nav > ul > li > a {
 
 
 .landingSection {
-  min-height: 91vh;
+  min-height: 92vh;
   max-height: fit-content;
   max-width: 96vw;
   margin-top: 70px;
@@ -252,7 +254,6 @@ a:hover {
 
 .credential {
   display: flex;
-
   flex-direction: column;
   place-items: center;
   border-style: solid;
@@ -261,6 +262,7 @@ a:hover {
   margin-bottom:2vw;
   max-width: 1000px;
   width: 96vw;
+  row-gap: 20px;
 }
 
 .ulGrid{
@@ -268,7 +270,7 @@ a:hover {
   grid-template-columns: 1fr 4fr 4fr 1fr;
   row-gap: 20px;
   column-gap: 20px;
-  grid-template-rows: repeat(18, fit-content);
+  grid-template-rows: repeat(9, fit-content);
   padding: 5px;
   align-items: center;
   width:80vw;
